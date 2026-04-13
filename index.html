@@ -25,6 +25,19 @@
             h1{
                 font-size: 50px;
                 margin-bottom: 10px;
+                animation: fadeIn 2s;
+            }
+
+            @keyframes fadeIn{
+                from{
+                    opacity: 0;
+                    transform: translateY(-30px);
+                }
+
+                to{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
             }
 
             p{
@@ -90,13 +103,13 @@
 
         <div class="hero">
 
-            <h1>Raul Tech Solutions</h1>
+            <h1>Hola, soy Raul</h1>
 
             <p>
-                Desarrollo páginas web modernas para negocios y emprendedores.
+                Frontend Developer en formación creando experiencias web modernas.
             </p>
 
-            <button onclick="contacto()">Contáctame</button>
+            <button onclick="contacto()">Ver Proyectos</button>
 
         </div>
 
