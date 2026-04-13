@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reparaciones MCgames</title>
+        <meta name="viewport"
+        content="width=device-width", initial-scale=1.0">
+
+        <style>
+            body{
+                margin: 0;
+                font-family: Arial;
+                background: #121212;
+                color: white;
+            }
+            .hero{
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 20px;
+            }
+
+            h1{
+                font-size: 50px;
+                margin-bottom: 10px;
+            }
+
+            p{
+                font-size: 20px;
+                max-width: 600px;
+            }
+
+            button{
+                margin-top: 20px;
+                padding: 15px 30px;
+                border: none;
+                border-radius: 10px;
+                background: #007bff;
+                color: white;
+                font-size: 18px;
+                cursor: pointer;
+            }
+            .seccion{
+                padding: 20px;
+                text-align: center;
+                background: #1e1e1e;
+                margin-top: 10px;
+            }
+            .footer{
+                padding: 20px;
+                text-align: center;
+                background: #000;
+            }
+            .contenedor-cards{
+                display: flex;
+                justify-content: center;
+                gap:20px;
+                flex-wrap: wrap;
+                margin-top:30px;
+            }
+            .card{
+                background: #2a2a2a;
+                padding: 20px;
+                width: 250px;
+                border-radius: 15px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.4);
+                transition: 0.3s;
+            }
+            .card:hover{
+                transform: scale(1.05);
+            }
+            @media(max-width:768px){
+
+                h1{
+                    font-size: 35px;
+                }
+                p{
+                    font-size: 18px;
+                }
+                .contenedor-cards{
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="hero">
+
+            <h1>Raul Tech Solutions</h1>
+
+            <p>
+                Desarrollo páginas web modernas para negocios y emprendedores.
+            </p>
+
+            <button onclick="contacto()">Contáctame</button>
+
+        </div>
+
+        <div class="seccion">
+            <h2>Servicios</h2>
+
+            <div class="contenedor-cards">
+                <div class="card">
+                    <h3>Diseño Web</h3>
+                    <p>Páginas modernas y responsivas.</p>
+                </div>
+                <div class="card">
+                    <h3>Landing Pages</h3>
+                    <p>Perfectas para promocionar negocios.</p>
+                </div>
+                <div class="card">
+                    <h3>Soporte Técnico</h3>
+                    <p>Soluciones rápidas y profesionales.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion">
+            <h2>Testimonios</h2>
+            <div class="contenedor-cards">
+                <div class="card">
+                    <p>"Excelente servicio y atención"</p>
+                </div>
+                <div class="card">
+                    <p>"Mi negocio ahora tiene presencia online"</p>
+                </div>
+            </div>
+        </div>
+
+         <div class="seccion">
+            <h2>Sobre Nosotros</h2>
+
+            <div class="contenedor-cards">
+                <div class="card">
+                    <p>Somos una empresa reconocida.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Contacto: reparacionesmcgames@yahoo.com</p>
+        </div>
+
+        <script>
+            function contacto(){
+                alert("Gracias por tu interés, pronto estaremos en contacto.")
+            }
+        </script>
+
+    </body>
+</html>
